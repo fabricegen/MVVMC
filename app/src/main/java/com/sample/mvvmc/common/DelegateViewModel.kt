@@ -1,10 +1,6 @@
-package com.sample.mvvmc.ui.updateaddress.base
+package com.sample.mvvmc.common
 
 import androidx.fragment.app.Fragment
-import com.sample.mvvmc.common.Coordinator
-import com.sample.mvvmc.common.CoordinatorHost
-import com.sample.mvvmc.common.Screen
-import com.sample.mvvmc.common.Screenable
 import kotlin.properties.ReadOnlyProperty
 import kotlin.reflect.KProperty
 

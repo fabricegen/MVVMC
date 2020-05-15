@@ -6,7 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.sample.mvvmc.R
-import com.sample.mvvmc.ui.updateaddress.base.DelegateViewModel
+import com.sample.mvvmc.common.DelegateViewModel
 import com.sample.mvvmc.common.Screenable
 import com.sample.mvvmc.ui.updateaddress.navigation.UpdateAddressScreen
 
