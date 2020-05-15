@@ -1,4 +1,4 @@
-package com.sample.mvvmc.ui.updateaddress
+package com.sample.mvvmc.ui.updateaddress.navigation
 
 import com.sample.mvvmc.common.Coordinator
 import com.sample.mvvmc.ui.updateaddress.address.AddressViewModel

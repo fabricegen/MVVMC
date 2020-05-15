@@ -5,12 +5,18 @@ import androidx.appcompat.app.AppCompatActivity
 import com.sample.mvvmc.common.Coordinator
 import com.sample.mvvmc.common.CoordinatorHost
 import com.sample.mvvmc.R
+import com.sample.mvvmc.ui.updateaddress.navigation.UpdateAddressCoordinator
+import com.sample.mvvmc.ui.updateaddress.navigation.UpdateAddressFlowNavigator
 
 class UpdateAddressActivity : AppCompatActivity(),
     CoordinatorHost {
 
     override val coordinator: Coordinator<*>
-        get() = UpdateAddressCoordinator(UpdateAddressFlowNavigator(supportFragmentManager))
+        get() = UpdateAddressCoordinator(
+            UpdateAddressFlowNavigator(
+                supportFragmentManager
+            )
+        )
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

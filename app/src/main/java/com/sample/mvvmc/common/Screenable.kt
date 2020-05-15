@@ -1,6 +1,6 @@
 package com.sample.mvvmc.common
 
-import com.sample.mvvmc.ui.updateaddress.UpdateAddressScreen
+import com.sample.mvvmc.ui.updateaddress.navigation.UpdateAddressScreen
 
 interface Screenable {
 

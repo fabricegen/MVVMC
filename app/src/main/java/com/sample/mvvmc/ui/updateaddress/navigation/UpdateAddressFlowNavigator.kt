@@ -1,4 +1,4 @@
-package com.sample.mvvmc.ui.updateaddress
+package com.sample.mvvmc.ui.updateaddress.navigation
 
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
