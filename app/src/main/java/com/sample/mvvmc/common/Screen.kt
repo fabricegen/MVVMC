@@ -1,5 +1,3 @@
 package com.sample.mvvmc.common
 
-interface Screen {
-
-}
+interface Screen

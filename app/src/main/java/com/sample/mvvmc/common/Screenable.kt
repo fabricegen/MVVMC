@@ -1,9 +1,9 @@
 package com.sample.mvvmc.common
 
-import com.sample.mvvmc.ui.updateaddress.navigation.UpdateAddressScreen
-
+/*
+ * Tag all objects (like activities/fragments) related to a screen
+ */
 interface Screenable {
 
-    val screen: UpdateAddressScreen
-
+    val screen: Screen
 }

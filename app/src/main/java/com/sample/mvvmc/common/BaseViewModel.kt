@@ -2,7 +2,7 @@ package com.sample.mvvmc.common
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.sample.mvvmc.common.CoordinationEvent
+import com.sample.mvvmc.navigation.CoordinationEvent
 
 open class BaseViewModel : ViewModel() {
 

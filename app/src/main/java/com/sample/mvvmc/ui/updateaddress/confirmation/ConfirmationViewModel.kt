@@ -1,7 +1,7 @@
 package com.sample.mvvmc.ui.updateaddress.confirmation
 
 import com.sample.mvvmc.common.BaseViewModel
-import com.sample.mvvmc.common.CoordinationEvent
+import com.sample.mvvmc.navigation.CoordinationEvent
 
 class ConfirmationViewModel : BaseViewModel() {
 
@@ -9,7 +9,8 @@ class ConfirmationViewModel : BaseViewModel() {
         sendCoordinationEvent(ConfirmationCoordinationEvent.ConfirmationDone)
     }
 
-    sealed class ConfirmationCoordinationEvent: CoordinationEvent {
+    sealed class ConfirmationCoordinationEvent:
+        CoordinationEvent {
         object ConfirmationDone : ConfirmationCoordinationEvent()
     }
 }

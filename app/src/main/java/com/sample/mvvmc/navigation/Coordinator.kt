@@ -1,4 +1,6 @@
-package com.sample.mvvmc.common
+package com.sample.mvvmc.navigation
+
+import com.sample.mvvmc.common.BaseViewModel
 
 interface Coordinator<S : Any> {
 

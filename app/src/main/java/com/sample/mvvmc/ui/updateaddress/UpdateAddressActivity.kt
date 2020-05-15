@@ -1,18 +1,18 @@
 package com.sample.mvvmc.ui.updateaddress
 
 import android.app.Activity
-import android.content.ActivityNotFoundException
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.sample.mvvmc.R
-import com.sample.mvvmc.common.Coordinator
-import com.sample.mvvmc.common.CoordinatorHost
+import com.sample.mvvmc.navigation.Coordinator
+import com.sample.mvvmc.navigation.CoordinatorHost
 import com.sample.mvvmc.navigation.FeatureNavigator
 import com.sample.mvvmc.ui.updateaddress.navigation.UpdateAddressCoordinator
 import com.sample.mvvmc.ui.updateaddress.navigation.UpdateAddressFlowNavigator
 
-class UpdateAddressActivity : AppCompatActivity(), CoordinatorHost {
+class UpdateAddressActivity : AppCompatActivity(),
+    CoordinatorHost {
 
     override val coordinator: Coordinator<*>
         get() = UpdateAddressCoordinator(
