@@ -34,7 +34,7 @@ class AddressFragment : Fragment(), Screenable {
         super.onActivityCreated(savedInstanceState)
 
         view!!.findViewById<Button>(R.id.next).setOnClickListener {
-            viewModel.next(Address("new address"))
+            viewModel.next(Address("London city center"))
         }
     }
 

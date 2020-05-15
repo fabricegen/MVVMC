@@ -5,6 +5,7 @@ import androidx.fragment.app.FragmentManager
 import com.sample.mvvmc.R
 import com.sample.mvvmc.ui.updateaddress.address.AddressFragment
 import com.sample.mvvmc.ui.updateaddress.confirmation.ConfirmationFragment
+import com.sample.mvvmc.ui.updateaddress.model.Address
 
 class UpdateAddressFlowNavigator(private val supportFragmentManager: FragmentManager) {
 
@@ -20,9 +21,9 @@ class UpdateAddressFlowNavigator(private val supportFragmentManager: FragmentMan
             .commitNow()
     }
 
-    fun navigateTo(screen: UpdateAddressScreen) {
+    fun navigateTo(screen: UpdateAddressScreen, arguments:Any?) {
         if (screen is UpdateAddressScreen.Confirmation) {
-            replace(ConfirmationFragment.newInstance())
+            replace(ConfirmationFragment.newInstance(arguments!! as Address))
         }
     }
 }

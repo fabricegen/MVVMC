@@ -23,7 +23,7 @@ class UpdateAddressCoordinator(private val flowNavigator: UpdateAddressFlowNavig
     override fun onEvent(event: Any, screen: UpdateAddressScreen) {
         when (event) {
             is AddressViewModel.EnterCoordinationEvent.AddressConfirmed -> {
-                flowNavigator.navigateTo(UpdateAddressScreen.Confirmation)
+                flowNavigator.navigateTo(UpdateAddressScreen.Confirmation, event.address)
             }
         }
     }
