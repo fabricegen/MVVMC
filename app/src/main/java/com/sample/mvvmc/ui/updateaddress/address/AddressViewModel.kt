@@ -1,6 +1,7 @@
 package com.sample.mvvmc.ui.updateaddress.address
 
-import com.sample.mvvmc.ui.updateaddress.base.BaseViewModel
+import com.sample.mvvmc.common.CoordinationEvent
+import com.sample.mvvmc.common.BaseViewModel
 import com.sample.mvvmc.ui.updateaddress.model.Address
 
 class AddressViewModel : BaseViewModel() {
@@ -13,7 +14,8 @@ class AddressViewModel : BaseViewModel() {
         )
     }
 
-    sealed class EnterCoordinationEvent {
+    sealed class EnterCoordinationEvent:
+        CoordinationEvent {
         data class AddressConfirmed(val address: Address) : EnterCoordinationEvent()
     }
 }

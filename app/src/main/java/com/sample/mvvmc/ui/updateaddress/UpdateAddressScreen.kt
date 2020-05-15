@@ -1,6 +1,8 @@
 package com.sample.mvvmc.ui.updateaddress
 
-sealed class UpdateAddressScreen {
+import com.sample.mvvmc.common.Screen
+
+sealed class UpdateAddressScreen : Screen {
     object EnterAddress:UpdateAddressScreen()
     object Confirmation:UpdateAddressScreen()
 }

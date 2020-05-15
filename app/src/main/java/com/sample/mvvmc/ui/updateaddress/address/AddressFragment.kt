@@ -8,7 +8,7 @@ import android.widget.Button
 import androidx.fragment.app.Fragment
 import com.sample.mvvmc.R
 import com.sample.mvvmc.ui.updateaddress.base.DelegateViewModel
-import com.sample.mvvmc.ui.updateaddress.Screenable
+import com.sample.mvvmc.common.Screenable
 import com.sample.mvvmc.ui.updateaddress.UpdateAddressScreen
 import com.sample.mvvmc.ui.updateaddress.model.Address
 

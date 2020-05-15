@@ -2,7 +2,7 @@ package com.sample.mvvmc.ui.updateaddress
 
 import com.sample.mvvmc.common.Coordinator
 import com.sample.mvvmc.ui.updateaddress.address.AddressViewModel
-import com.sample.mvvmc.ui.updateaddress.base.BaseViewModel
+import com.sample.mvvmc.common.BaseViewModel
 import com.sample.mvvmc.ui.updateaddress.confirmation.ConfirmationViewModel
 
 class UpdateAddressCoordinator(private val flowNavigator: UpdateAddressFlowNavigator) :
