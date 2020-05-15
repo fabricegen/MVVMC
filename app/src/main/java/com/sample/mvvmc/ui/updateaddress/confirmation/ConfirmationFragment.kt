@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import com.sample.mvvmc.R
@@ -44,9 +45,14 @@ class ConfirmationFragment : Fragment(), Screenable {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
 
-        address?.let {
-            view!!.findViewById<TextView>(R.id.address).text = it.address
+        view?.let{ view ->
+            address?.let {
+                view.findViewById<TextView>(R.id.address).text = it.address
+            }
+
+            view.findViewById<Button>(R.id.done).setOnClickListener {
+                viewModel.done()
+            }
         }
     }
-
 }
